@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>RmApp.Benchmarks.Benchmarks-20250816-100949</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.15.2, macOS Sequoia 15.6 (24G84) [Darwin 24.6.0]
+Apple M1 Pro, 1 CPU, 10 logical and 10 physical cores
+.NET SDK 8.0.410
+  [Host]     : .NET 8.0.16 (8.0.1625.21506), Arm64 RyuJIT AdvSIMD
+  DefaultJob : .NET 8.0.16 (8.0.1625.21506), Arm64 RyuJIT AdvSIMD
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method     </th><th>ShapeCount</th><th>Mean  </th><th>Error</th><th>StdDev</th><th>Median</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>CornerAreaVTBL4</td><td>1000</td><td>511.0 ns</td><td>0.90 ns</td><td>0.84 ns</td><td>510.7 ns</td><td>-</td>
+</tr><tr><td>CornerAreaSwitch4</td><td>1000</td><td>4,146.5 ns</td><td>29.36 ns</td><td>26.03 ns</td><td>4,135.1 ns</td><td>-</td>
+</tr><tr><td>CornerAreaUnion4</td><td>1000</td><td>601.8 ns</td><td>10.77 ns</td><td>16.11 ns</td><td>593.5 ns</td><td>-</td>
+</tr><tr><td>CornerAreaVTBL4</td><td>10000</td><td>6,123.2 ns</td><td>18.82 ns</td><td>14.70 ns</td><td>6,117.3 ns</td><td>-</td>
+</tr><tr><td>CornerAreaSwitch4</td><td>10000</td><td>41,456.9 ns</td><td>64.79 ns</td><td>57.43 ns</td><td>41,442.7 ns</td><td>-</td>
+</tr><tr><td>CornerAreaUnion4</td><td>10000</td><td>5,884.7 ns</td><td>4.87 ns</td><td>4.06 ns</td><td>5,883.7 ns</td><td>-</td>
+</tr><tr><td>CornerAreaVTBL4</td><td>100000</td><td>61,939.5 ns</td><td>620.01 ns</td><td>517.74 ns</td><td>61,703.6 ns</td><td>-</td>
+</tr><tr><td>CornerAreaSwitch4</td><td>100000</td><td>416,743.3 ns</td><td>1,222.80 ns</td><td>1,021.09 ns</td><td>416,471.7 ns</td><td>-</td>
+</tr><tr><td>CornerAreaUnion4</td><td>100000</td><td>58,414.4 ns</td><td>116.33 ns</td><td>103.13 ns</td><td>58,390.2 ns</td><td>-</td>
+</tr></tbody></table>
+</body>
+</html>

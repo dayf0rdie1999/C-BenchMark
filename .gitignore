@@ -58,7 +58,7 @@ nunit-*.xml
 dlldata.c
 
 # Benchmark Results
-BenchmarkDotNet.Artifacts/
+# BenchmarkDotNet.Artifacts/
 
 # .NET
 project.lock.json
@@ -95,7 +95,7 @@ StyleCopReport.xml
 *.tmp
 *.tmp_proj
 *_wpftmp.csproj
-*.log
+# *.log
 *.tlog
 *.vspscc
 *.vssscc

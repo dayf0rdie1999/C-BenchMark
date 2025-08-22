@@ -1,0 +1,57 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 9 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:ArtifactsPath="/Users/vuduong/workspace/C3BenchMarks/Benchmarks/bin/Release/net8.0/RmApp.Benchmarks-DefaultJob-1/" /p:OutDir="/Users/vuduong/workspace/C3BenchMarks/Benchmarks/bin/Release/net8.0/RmApp.Benchmarks-DefaultJob-1/bin/Release/net8.0/" /p:OutputPath="/Users/vuduong/workspace/C3BenchMarks/Benchmarks/bin/Release/net8.0/RmApp.Benchmarks-DefaultJob-1/bin/Release/net8.0/" /p:PublishDir="/Users/vuduong/workspace/C3BenchMarks/Benchmarks/bin/Release/net8.0/RmApp.Benchmarks-DefaultJob-1/publish/" in /Users/vuduong/workspace/C3BenchMarks/Benchmarks/bin/Release/net8.0/RmApp.Benchmarks-DefaultJob-1
+// command took 0.72 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:ArtifactsPath="/Users/vuduong/workspace/C3BenchMarks/Benchmarks/bin/Release/net8.0/RmApp.Benchmarks-DefaultJob-1/" /p:OutDir="/Users/vuduong/workspace/C3BenchMarks/Benchmarks/bin/Release/net8.0/RmApp.Benchmarks-DefaultJob-1/bin/Release/net8.0/" /p:OutputPath="/Users/vuduong/workspace/C3BenchMarks/Benchmarks/bin/Release/net8.0/RmApp.Benchmarks-DefaultJob-1/bin/Release/net8.0/" /p:PublishDir="/Users/vuduong/workspace/C3BenchMarks/Benchmarks/bin/Release/net8.0/RmApp.Benchmarks-DefaultJob-1/publish/" --output "/Users/vuduong/workspace/C3BenchMarks/Benchmarks/bin/Release/net8.0/RmApp.Benchmarks-DefaultJob-1/bin/Release/net8.0/" in /Users/vuduong/workspace/C3BenchMarks/Benchmarks/bin/Release/net8.0/RmApp.Benchmarks-DefaultJob-1
+// command took 2.77 sec and exited with 0
+// ***** Done, took 00:00:03 (3.52 sec)   *****
+// Found 9 benchmarks:
+//   Benchmarks.CornerAreaVTBL4: DefaultJob [ShapeCount=1000]
+//   Benchmarks.CornerAreaSwitch4: DefaultJob [ShapeCount=1000]
+//   Benchmarks.CornerAreaUnion4: DefaultJob [ShapeCount=1000]
+//   Benchmarks.CornerAreaVTBL4: DefaultJob [ShapeCount=10000]
+//   Benchmarks.CornerAreaSwitch4: DefaultJob [ShapeCount=10000]
+//   Benchmarks.CornerAreaUnion4: DefaultJob [ShapeCount=10000]
+//   Benchmarks.CornerAreaVTBL4: DefaultJob [ShapeCount=100000]
+//   Benchmarks.CornerAreaSwitch4: DefaultJob [ShapeCount=100000]
+//   Benchmarks.CornerAreaUnion4: DefaultJob [ShapeCount=100000]
+
+// **************************
+// Benchmark: Benchmarks.CornerAreaVTBL4: DefaultJob [ShapeCount=1000]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet RmApp.Benchmarks-DefaultJob-1.dll --anonymousPipes 118 119 --benchmarkName "RmApp.Benchmarks.Benchmarks.CornerAreaVTBL4(ShapeCount: 1000)" --job Default --benchmarkId 0 in /Users/vuduong/workspace/C3BenchMarks/Benchmarks/bin/Release/net8.0/RmApp.Benchmarks-DefaultJob-1/bin/Release/net8.0
+// Failed to set up high priority (Permission denied). In order to run benchmarks with high priority, make sure you have the right permissions.
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.16 (8.0.1625.21506), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,AES,CRC32,DP,RDM,SHA1,SHA256 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 121458.00 ns, 121.4580 us/op
+WorkloadJitting  1: 1 op, 461917.00 ns, 461.9170 us/op
+
+OverheadJitting  2: 16 op, 253375.00 ns, 15.8359 us/op
+WorkloadJitting  2: 16 op, 568875.00 ns, 35.5547 us/op
+
+WorkloadPilot    1: 16 op, 357666.00 ns, 22.3541 us/op
+WorkloadPilot    2: 32 op, 713625.00 ns, 22.3008 us/op
+WorkloadPilot    3: 64 op, 1439833.00 ns, 22.4974 us/op
+WorkloadPilot    4: 128 op, 2940000.00 ns, 22.9688 us/op
+WorkloadPilot    5: 256 op, 5856167.00 ns, 22.8757 us/op
+WorkloadPilot    6: 512 op, 11853416.00 ns, 23.1512 us/op
+WorkloadPilot    7: 1024 op, 23047875.00 ns, 22.5077 us/op
+WorkloadPilot    8: 2048 op, 45424458.00 ns, 22.1799 us/op
+WorkloadPilot    9: 4096 op, 37297125.00 ns, 9.1057 us/op
+WorkloadPilot   10: 8192 op, 4219209.00 ns, 515.0402 ns/op
+WorkloadPilot   11: 16384 op, 8470958.00 ns, 517.0262 ns/op
+WorkloadPilot   12: 32768 op, 16919083.00 ns, 516.3294 ns/op
+WorkloadPilot   13: 65536 op, 33867667.00 ns, 516.7796 ns/op
+WorkloadPilot   14: 131072 op, 68031417.00 ns, 519.0385 ns/op
+WorkloadPilot   15: 262144 op, 134775334.00 ns, 514.1271 ns/op
+WorkloadPilot   16: 524288 op, 270268667.00 ns, 515.4966 ns/op
